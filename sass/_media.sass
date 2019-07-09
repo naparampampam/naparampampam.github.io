@@ -1,0 +1,254 @@
+@import "vars"
+
+// @media only screen and (max-width : 1200px)
+  // .Carousel
+  //   .owl-carousel
+  //     .owl-nav
+  //       top: 150px
+
+
+// @media only screen and (max-width : 992px)
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+  #wrap_nav
+    width: 100vw
+    left: 0
+    top: 80px
+    height: 100%
+    // height: calc(100vh - 80px)
+    z-index: 90
+    transition: all .2s linear
+    transform: translateX(-100%)
+    position: fixed
+    background: $accent
+    display: flex
+    flex-direction: column
+    justify-content: center
+    // opacity: .9
+    ul
+      padding: 0
+      li
+        list-style: none
+        margin-bottom: 32px
+        text-align: center
+        &:last-of-type
+          margin-bottom: 0
+        a
+          text-decoration: none
+          text-transform: uppercase
+          font-size: 16px
+          color: $black
+          text-align: left
+          transition: all 800ms linear
+          transform: translateX(20px)
+          opacity: 0
+    &.open
+      transform: translateX(0%)
+      a
+        // transition: all 200ms linear
+        transform: translateX(0px)
+        opacity: 1
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+
+  .header-top__small-menu
+    display: block
+
+  .header-top
+    &__phone
+      display: none
+    &__button
+      display: none
+
+  .header-top__button
+    display: none
+  
+  .top-menu.default
+    .header-top__hidden-wrapper
+      max-height: 90px
+
+
+  .header-top__menu
+    display: none
+    ul
+      li
+        a
+          display: none
+
+  .top-menu.default
+    .header-top__hidden-wrapper
+      .hidden-logo
+        line-height: 80px
+        padding-top: 8px
+
+      .hidden-menu
+        .fixed-menu
+          display: none
+          font-size: 14px
+          width: 130px
+          right: 0
+          &__title
+            &:before
+              left: 16px
+              width: 15px
+              height: 15px
+            &:after
+              right: 15px
+
+      .hidden-button
+        padding: 0
+        display: none
+        a
+          padding: 5px 9px
+          font-size: 11px
+          font-weight: 400
+
+      .hidden-phone
+        padding: 0
+        display: none
+        span
+          font-size: 13px
+
+
+  .top-menu.default
+    .header-top__hidden-wrapper
+
+  .top-menu
+    .header-top__hidden-wrapper
+      .hidden-menu
+        .fixed-menu__title
+          line-height: 15px
+
+
+  .gallery__items
+    h2
+      left: 28%
+
+  .questions-items
+    .item
+      padding-bottom: 30px
+
+  .mfp-content
+    #questions-form, #callback-form
+      font-size: 14px
+      .form-input
+        
+      .form-header
+        padding: 15px 30px 20px 36px
+        .text
+          span
+            font-size: 22px
+        i
+          width: 45px
+          height: 45px
+          line-height: 45px
+          font-size: 30px
+
+      .form-body__wrapper
+        padding-top: 15px
+        padding-bottom: 0
+        .form-input
+          padding-bottom: 15px
+          i
+            top: 33px
+        .form-input-textarea
+          padding-bottom: 5px
+
+      .form-footer
+        padding: 15px 50px 15px
+        .btn
+          width: 130px
+          height: 40px
+          line-height: 40px
+
+
+
+
+  .company
+    // text-align: center
+    &-title
+      text-align: center
+    &-item
+      .image
+        text-align: center
+
+  .news a.btn
+    top: -5px
+
+  footer
+    .footer-wrapper
+      // display: block
+      // text-align: center
+      margin-top: 0
+      a
+        font-weight: 600
+        font-size: 16px
+      ul.submenu
+        padding-bottom: 10px
+        li
+          padding-bottom: 0
+          a
+            font-weight: 600
+            font-size: 14px
+      .footer-contacts
+        ul
+          i
+            left: 203px
+            &.fa-map-marker
+              left: 127px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+  .header-top
+    &__phone
+      display: none
+    &__button
+      display: none
+
+  .top-menu.default
+    .header-top__hidden-wrapper
+      max-height: 90px
+
+
+  .gallery__items h2
+    left: 23%
+
+
+  .projects
+    .projects-wrapper
+      .projects-items
+        a.btn
+          position: absolute
+          left: 15px
+          top: -20px
+          width: 115px
+
+  footer
+    .footer-wrapper
+      .footer-contacts
+        ul
+          i
+            left: 153px
+            &.fa-map-marker
+              left: 83px
+
+
+// /* Extra Small Devices, Phones */
+@media only screen and (min-width : 380px)
+
+  footer
+  .footer-wrapper
+    .footer-contacts
+      ul
+        i
+          left: 107px
+          &.fa-map-marker
+            left: 3px
